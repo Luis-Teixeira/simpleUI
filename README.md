@@ -1,4 +1,4 @@
 # simpleUI
-Simple UI library 0.0
+Simple UI library
 
 Nothing to See, YET! 
