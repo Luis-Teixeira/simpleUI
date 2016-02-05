@@ -1,0 +1,145 @@
+
+/*
+*  MIXINS
+*  button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius)
+*  button-variant($color, $background-color, $border-color);
+*  button-outline-variant($color* , $color-on-hover); // *color & border-color
+*/
+
+.button {
+  font-weight: $button-font-weight;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  text-transform: $button-text-transform;
+  border: $button-border solid transparent;
+  @extend %animated,
+          %text-center,
+          %text-decoration-none,
+          %display-inline-block;
+  @include button-size($button-padding-y, $button-padding-x, $font-size-base, $line-height, $button-border-radius);
+
+  &.disabled,
+  &:disabled {
+    cursor: default;
+    opacity: .65;
+  }
+}
+
+.button--block {
+  @extend .button, %w100, %display-block;
+}
+
+.button--block + .button--block {
+  margin-top: $button-block-spacing-y;
+}
+
+//
+// Alternate buttons
+//
+
+.button-primary {
+
+
+  @include button-variant($button-primary-color, $button-primary-bg, $button-primary-border);
+
+  @at-root #{&}--block {
+    @include button-variant($button-primary-color, $button-primary-bg, $button-primary-border);
+    @extend %w100, %display-block;
+  }
+
+  @if($render-button-outline) {
+    @at-root #{&}--outline {
+      @include button-outline-variant($button-primary-bg , #fff);
+    }
+  }
+}
+.button-secondary {
+  @include button-variant($button-secondary-color, $button-secondary-bg, $button-secondary-border);
+
+  @at-root #{&}--block {
+    @include button-variant($button-secondary-color, $button-primary-bg, $button-primary-border);
+    @extend %w100, %display-block;
+  }
+
+  @if($render-button-outline) {
+    @at-root #{&}--outline {
+      @include button-outline-variant($button-secondary-bg,  #fff);
+    }
+  }
+}
+//
+// Extra buttons
+//
+@if($render-extra-button) {
+  .button-info {
+    @include button-variant(#fff, $color-info, $color-info);
+
+    @at-root #{&}--block {
+      @include button-variant(#fff, $color-info, $color-info);
+      @extend %w100, %display-block;
+    }
+
+    @if($render-button-outline) {
+      @at-root #{&}--outline {
+        @include button-outline-variant($color-info,  #fff);
+      }
+    }
+  }
+  .button-success {
+    @include button-variant(#fff, $color-success, $color-success);
+
+    @at-root #{&}--block {
+      @include button-variant(#fff, $color-success, $color-success);
+      @extend %w100, %display-block;
+    }
+
+    @if($render-button-outline) {
+      @at-root #{&}--outline {
+        @include button-outline-variant($color-success,  #fff);
+      }
+    }
+  }
+  .button-warning {
+    @include button-variant(#fff, $color-warning, $color-warning);
+
+    @at-root #{&}--block {
+      @include button-variant(#fff, $color-warning, $color-warning);
+      @extend %w100, %display-block;
+    }
+
+    @if($render-button-outline) {
+      @at-root #{&}--outline {
+        @include button-outline-variant($color-warning,  #fff);
+      }
+    }
+  }
+  .button-danger {
+    @include button-variant(#fff, $color-danger, $color-danger);
+
+    @at-root #{&}--block {
+      @include button-variant(#fff, $color-danger, $color-danger);
+      @extend %w100, %display-block;
+    }
+
+    @if($render-button-outline) {
+      @at-root #{&}--outline {
+        @include button-outline-variant($color-danger,  #fff);
+      }
+    }
+  }
+}
+
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  @if($render-outline-inputs==false) {
+    outline:0;
+  }
+  &.button-block {
+    width: 100%;
+  }
+}

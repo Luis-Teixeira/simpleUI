@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+//Colors
+//** defaults colors
+$color-success:             #5cb85c !default;
+$color-info:                #5bc0de !default;
+$color-warning:             #f0ad4e !default;
+$color-danger:              #d9534f !default;
+
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+//** brand colors
+$primary-color:             #de8e17 !default;
+$secondary-color:           lighten($gray-dark, 13.5%) !default;
+
+$body-bg:                   #f0f0f0;
+$text-color:                $gray-dark;
+$link-color:                $primary-color;
+$link-hover-color:          darken($link-color, 15%);
+
+$font-family-sans-serif: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$font-size-root: 14px !default;
+$font-size-base: .9rem !default;
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
+$font-size-xs:   .75rem !default;
+
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+
+
+// Misc
+$global-radius: 4px !default;
+$line-height: 1.5 !default;
+$link-hover-decoration: underline;

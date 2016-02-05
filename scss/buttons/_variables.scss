@@ -1,0 +1,20 @@
+//options
+$render-button-outline : true;
+$render-extra-button : false;
+$render-outline-inputs : false;
+
+$button-border: 1px;
+$button-border-radius: 2px !default;
+$button-padding-x: 2rem !default;
+$button-padding-y: .4rem !default;
+$button-font-weight: normal !default;
+$button-text-transform: uppercase;
+
+$button-block-spacing-y: .8rem;
+$button-primary-bg: $primary-color;
+$button-primary-color: #fff;
+$button-primary-border: $primary-color;
+
+$button-secondary-bg: $secondary-color;
+$button-secondary-color: #fff;
+$button-secondary-border: $secondary-color;

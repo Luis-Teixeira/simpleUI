@@ -1,0 +1,132 @@
+.button--block {
+  display: block; }
+
+.button, .button--block {
+  display: inline-block; }
+
+.button--block {
+  width: 100%; }
+
+.button, .button--block {
+  text-align: center; }
+
+.button, .button--block {
+  text-decoration: none; }
+
+
+.button,
+.button--block {
+  transition: all 250ms ease-in-out; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #373a3c;
+  background-color: #f0f0f0; }
+
+[tabindex="-1"]:focus {
+  outline: none !important; }
+
+[hidden] {
+  display: none !important; }
+
+.button, .button--block {
+  font-weight: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 0.24rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 2px; }
+  .button.disabled, .disabled.button--block, .button:disabled, .button--block:disabled {
+    cursor: default;
+    opacity: .65; }
+
+.button--block + .button--block {
+  margin-top: 0.8rem; }
+
+.button-primary {
+  color: #fff;
+  background-color: #de8e17;
+  border-color: #de8e17; }
+  .button-primary:hover, .button-primary:focus, .button-primary.focus {
+    color: #fff;
+    background-color: #b07012;
+    border-color: #a76b11; }
+  .button-primary.disabled:focus, .button-primary.disabled.focus, .button-primary:disabled:focus, .button-primary:disabled.focus {
+    background-color: #de8e17;
+    border-color: #de8e17; }
+  .button-primary.disabled:hover, .button-primary.disabled.hover, .button-primary:disabled:hover, .button-primary:disabled.hover {
+    color: #fff;
+    background-color: #de8e17;
+    border-color: #de8e17; }
+  .button-primary--outline {
+    color: #de8e17;
+    background-image: none;
+    background-color: transparent;
+    border-color: #de8e17; }
+    .button-primary--outline:hover {
+      color: #fff;
+      background-color: #de8e17;
+      border-color: #de8e17; }
+    .button-primary--outline.disabled:focus, .button-primary--outline.disabled.focus, .button-primary--outline:disabled:focus, .button-primary--outline:disabled.focus {
+      border-color: #f0ba6b; }
+    .button-primary--outline.disabled:hover, .button-primary--outline:disabled:hover {
+      color: #de8e17;
+      background-color: transparent;
+      border-color: #de8e17; }
+
+.button-secondary {
+  color: #fff;
+  background-color: #585d60;
+  border-color: #585d60; }
+  .button-secondary:hover, .button-secondary:focus, .button-secondary.focus {
+    color: #fff;
+    background-color: #404345;
+    border-color: #3b3e40; }
+  .button-secondary.disabled:focus, .button-secondary.disabled.focus, .button-secondary:disabled:focus, .button-secondary:disabled.focus {
+    background-color: #585d60;
+    border-color: #585d60; }
+  .button-secondary.disabled:hover, .button-secondary.disabled.hover, .button-secondary:disabled:hover, .button-secondary:disabled.hover {
+    color: #fff;
+    background-color: #585d60;
+    border-color: #585d60; }
+  .button-secondary--outline {
+    color: #585d60;
+    background-image: none;
+    background-color: transparent;
+    border-color: #585d60; }
+    .button-secondary--outline:hover {
+      color: #fff;
+      background-color: #585d60;
+      border-color: #585d60; }
+    .button-secondary--outline.disabled:focus, .button-secondary--outline.disabled.focus, .button-secondary--outline:disabled:focus, .button-secondary--outline:disabled.focus {
+      border-color: #8a9094; }
+    .button-secondary--outline.disabled:hover, .button-secondary--outline:disabled:hover {
+      color: #585d60;
+      background-color: transparent;
+      border-color: #585d60; }
+
+input[type="submit"].button-block,
+input[type="reset"].button-block,
+input[type="button"].button-block {
+  width: 100%; }
