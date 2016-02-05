@@ -101,6 +101,7 @@
       }
     }
   }
+
   .button-warning {
     @include button-variant(#fff, $color-warning, $color-warning);
 
@@ -115,6 +116,7 @@
       }
     }
   }
+
   .button-danger {
     @include button-variant(#fff, $color-danger, $color-danger);
 
@@ -130,7 +132,6 @@
     }
   }
 }
-
 
 // Specificity overrides
 input[type="submit"],

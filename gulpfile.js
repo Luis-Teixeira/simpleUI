@@ -8,7 +8,7 @@ gulp.task('sass:dev', function () {
   gulp.src('./scss/simplui.scss')
     .pipe($.sass({
       outputStyle: 'expanded',
-      sourcemapPath: '../scss',
+      sourcemapPath: '../scss'
     }).on('error', $.sass.logError))
     .pipe(gulp.dest('./docs/css'))
     .pipe(reload({stream: true}));
