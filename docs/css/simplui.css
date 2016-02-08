@@ -134,10 +134,19 @@ body {
   background-image: none;
   background-color: transparent;
   border-color: #de8e17;
+  /*  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+   .pen > &.dropdown-toggle {
+     color: #fff;
+     background-color: $color;
+         border-color: $color;
+   }*/
 }
 
 .button-primary--outline:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #de8e17;
   border-color: #de8e17;
 }
@@ -203,6 +212,15 @@ body {
   background-image: none;
   background-color: transparent;
   border-color: #585d60;
+  /*  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+   .pen > &.dropdown-toggle {
+     color: #fff;
+     background-color: $color;
+         border-color: $color;
+   }*/
 }
 
 .button-secondary--outline:hover {
@@ -231,4 +249,59 @@ input[type="submit"].button-block,
 input[type="reset"].button-block,
 input[type="button"].button-block {
   width: 100%;
+}
+
+.button-white {
+  color: #000;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.button-white:hover, .button-white:focus, .button-white.focus {
+  color: #000;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.button-white.disabled:focus, .button-white.disabled.focus, .button-white:disabled:focus, .button-white:disabled.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.button-white.disabled:hover, .button-white.disabled.hover, .button-white:disabled:hover, .button-white:disabled.hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.button-white--outline {
+  color: #fff;
+  background-image: none;
+  background-color: transparent;
+  border-color: #fff;
+  /*  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+   .pen > &.dropdown-toggle {
+     color: #fff;
+     background-color: $color;
+         border-color: $color;
+   }*/
+}
+
+.button-white--outline:hover {
+  color: #9c9a9a;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.button-white--outline.disabled:focus, .button-white--outline.disabled.focus, .button-white--outline:disabled:focus, .button-white--outline:disabled.focus {
+  border-color: white;
+}
+
+.button-white--outline.disabled:hover, .button-white--outline:disabled:hover {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
 }

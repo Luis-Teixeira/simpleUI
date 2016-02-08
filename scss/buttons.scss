@@ -51,10 +51,11 @@
 
   @if($render-button-outline) {
     @at-root #{&}--outline {
-      @include button-outline-variant($button-primary-bg , #fff);
+      @include button-outline-variant($button-primary-bg , #ffffff);
     }
   }
 }
+
 .button-secondary {
   @include button-variant($button-secondary-color, $button-secondary-bg, $button-secondary-border);
 
@@ -69,6 +70,7 @@
     }
   }
 }
+
 //
 // Extra buttons
 //

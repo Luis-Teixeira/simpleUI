@@ -1,0 +1,7 @@
+//TSTE
+.button-white {
+  @include button-variant(#000, #fff, #ccc);
+  @at-root #{&}--outline {
+    @include button-outline-variant(#fff, #9c9a9a);
+  }
+}
